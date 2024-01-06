@@ -1,0 +1,33 @@
+.statistics {
+   min-width: 400px;
+   text-align: center;
+   margin-bottom: 30px;
+}
+
+.stat_title {
+   font-size: 24px;
+   margin-bottom: 15px;
+}
+
+.stat_list {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.stat_item {
+   width: 100px;
+   height: 70px;
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   color: #3d1b1b;
+}
+
+.stat_label {
+   font-size: 18px;
+}
+
+.stat_percentage {
+   font-size: 16px;
+}

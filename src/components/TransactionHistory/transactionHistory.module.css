@@ -1,0 +1,33 @@
+.transaction_history {
+
+   width: 500px;
+   border-collapse: collapse;
+   border: 3px solid rgb(224, 219, 224);
+   text-align: center;
+}
+
+thead th:nth-child(1) {
+   width: 33.33%;
+}
+
+thead th:nth-child(2) {
+   width: 33.33%;
+}
+
+thead th:nth-child(3) {
+   width: 33.33%;
+}
+
+th,
+td {
+   padding: 20px;
+}
+
+tbody tr {
+   background-color: #363136;
+   border: 3px solid rgb(224, 219, 224);
+}
+
+table {
+   background-color: #666465;
+}
