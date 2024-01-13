@@ -1,4 +1,4 @@
-.friend_item {
+.friendItem {
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -11,10 +11,20 @@
    flex: 1 0 100px;
 }
 
-.friend_name {
+.friendName {
    font-size: 24px;
 }
 
-.friend_status {
+.friendStatus {
    font-size: 18px;
+}
+
+.friendRed {
+   composes: friendStatus;
+   color: red;
+}
+
+.friendGreen {
+   composes: friendStatus;
+   color: green;
 }

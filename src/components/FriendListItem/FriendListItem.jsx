@@ -1,13 +1,12 @@
-import style from './friendListItem.module.css';
+import style from './FriendListItem.module.css';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
+   const statusClasses = isOnline ? style.friendGreen : style.friendRed;
    return (
-      <li className={style.friend_item}>
-         <img className={style.friend_avatar} src={avatar} alt="User avatar" width="48" />
-         <p className={style.friend_name}>{name}</p>
-         <p className={style.friend_status} style={{ color: `${isOnline ? 'green' : 'red'}` }}>{`${
-            isOnline ? 'Online' : 'Offline'
-         }`}</p>
+      <li className={style.friendItem}>
+         <img className={style.friendAvatar} src={avatar} alt="User avatar" width="48" />
+         <p className={style.friendName}>{name}</p>
+         <p className={statusClasses}>{`${isOnline ? 'Online' : 'Offline'}`}</p>
       </li>
    );
 };
