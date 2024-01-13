@@ -1,4 +1,4 @@
-import style from './FriendListItem.module.css';
+import style from './friendListItem.module.css';
 
 export const FriendListItem = ({ avatar, name, isOnline }) => {
    const statusClasses = isOnline ? style.friendGreen : style.friendRed;
